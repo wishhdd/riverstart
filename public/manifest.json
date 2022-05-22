@@ -1,0 +1,10 @@
+{
+  "short_name": "Riverstart test task",
+  "name": "Riverstart Frontend test task. Pixel perfect. Junior",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

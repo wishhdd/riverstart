@@ -1,0 +1,39 @@
+@import "/src/static/styles/styles.scss";
+
+.main {
+    position: absolute;
+    top: 27px;
+    right: 42px;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s ease-out;
+
+    & span:first-child,
+    & span:last-child {
+        position: absolute;
+        background: $colorTextAction;
+        width: 100%;
+        height: 1px;
+        border-radius: 1px;
+        transition: 0.5s ease-out;
+    }
+
+    & span:first-child {
+        transform: rotate(45deg);
+    }
+
+    & span:last-child {
+        transform: rotate(-45deg);
+    }
+
+    &:hover span:first-child,
+    &:hover span:last-child {
+        background: $colorTextAccent;
+    }
+
+    &:hover {
+        transform: scale(2);
+    }
+}

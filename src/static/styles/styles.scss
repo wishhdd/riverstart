@@ -1,0 +1,73 @@
+@import "./fonts/stylesheet.scss";
+
+
+$colorTextLight: #7b829a;
+$colorTextAction: #415de8;
+$colorText: #222b55;
+$colorBorderLight: rgba(34, 43, 85, 0.08);
+$colorBtnSecondary: #415de8;
+$colorBtnPrimary: #ff5762;
+$colorBgInfo: #f5f8ff;
+$colorTextAccent: #ff5762;
+
+
+
+body {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  background: #e5e5e5;
+  padding-top: 47px;
+}
+.fontH1 {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: $colorText;
+}
+.fontH2 {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: $colorText;
+}
+
+.fontH3 {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: $colorText;
+}
+
+.fontH4 {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: $colorText;
+}
+.fontH6 {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.fontTextSmall {
+  font-size: 14px;
+  line-height: 100%;
+  color: $colorTextLight;
+}
+
+.colorTextLight{
+  color: $colorTextLight;
+}

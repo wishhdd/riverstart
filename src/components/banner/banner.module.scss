@@ -1,0 +1,122 @@
+@import "/src/static/styles/styles.scss";
+
+.main {
+    margin-top: 40px;
+    border-top: 1px solid $colorBorderLight;
+    padding-top: 40px;
+}
+
+.title {
+    margin-right: 8px;
+    position: relative;
+    height: 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    &::after {
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(../../static/img/emoji__dizzy.png);
+        position: absolute;
+        right: -32px;
+    }
+}
+
+.description {
+    background: $colorBgInfo;
+    border-radius: 12px;
+    padding: 24px 40px;
+    position: relative;
+    @media (max-width: 767px) {
+        padding: 24px 20px;
+    }
+
+    &__title {
+        color: $colorTextAction;
+        position: relative;
+    }
+
+    &__columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+        }
+    }
+
+    &__advantages {
+        padding-top: 16px;
+        padding-right: 8px;
+    }
+
+    &-advantages__items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &-advantages__item {
+        margin-bottom: 18px;
+        position: relative;
+        padding-left: 28px;
+        line-height: 24px;
+        transition: 0.3s ease-out;
+        cursor: pointer;
+        color: $colorText;
+
+        &:hover {
+            transform: translateX(-3%);
+        }
+
+        &:before {
+            content: " ";
+            width: 24px;
+            height: 24px;
+            background: center url(../../static/img/check.svg) no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            @media (max-width: 1023px) {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    &__price-block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: 135px;
+        @media (max-width: 1023px) {
+            margin-left: auto;
+        }
+    }
+}
+
+.price-block {
+
+    &__cost {
+        text-align: right;
+        margin-bottom: 8px;
+    }
+
+    &__price-options {
+        text-align: right;
+        font-size: 12px;
+        line-height: 16px;
+        color: $colorTextLight;
+        margin-bottom: 8px;
+    }
+}

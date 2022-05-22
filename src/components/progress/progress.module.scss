@@ -1,0 +1,90 @@
+@import "/src/static/styles/styles.scss";
+
+.head {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 11px;
+    color: $colorText;
+
+    font-size: 16px;
+    line-height: 100%;
+
+    &__title{
+        overflow: hidden;
+    }
+    &__progress {
+        font-size: 14px;
+        line-height: 100%;
+        color: $colorTextLight;
+        flex-shrink: 0;
+    }
+    &__step{
+        color: $colorText ;
+    }
+
+}
+
+.progressBar {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #EBECF0;
+    position: relative;
+    margin-bottom: 8px;
+
+
+    &::before {
+        content: ' ';
+        width: var(--percentages, 0);
+        height: 8px;
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 1s;
+        // background: $colorTextAction;
+        background: var(--colorPercentages);
+        animation: fill 2s ease-out 1s 1;
+    }
+}
+
+.description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorTextLight;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__text {
+        margin-right: 4px;
+    }
+
+    &__link {
+        color: $colorTextLight;
+        border-bottom: 1px solid #fff;
+        transition: 0.5s ease-out;
+
+        &:hover {
+            color: $colorTextAccent;
+            border-bottom: 1px solid $colorTextAccent;
+        }
+    }
+}
+
+
+
+@keyframes fill {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--percentages, 0);
+    }
+}
